@@ -17,10 +17,11 @@ true(isBusiness), 1000km(distance), 0.8(p), 100(seat), 0.6(k), 5.01(averageFuelB
 ```
 
 ## 📝 How is it calculated?
-The carbon emissions are calculated based on the emission factors and calculation methods referenced from [Prediction of the Carbon Dioxide Emission Change Resulting from the Changes in Bovine Meat Consumption Behavior in Korea](https://jekosae.or.kr/_common/do.php?a=full&b=41&bidx=385&aidx=4856)
+The carbon emissions are calculated based on the emission factors and calculation methods referenced from [wikipedia](https://en.wikipedia.org/wiki/Fuel_economy_in_aircraft) and [aeroflot](https://www.aeroflot.ru/kr-ko/about/calculator_co2/method)
 
 ## 📚 Sources
-- [Prediction of the Carbon Dioxide Emission Change Resulting from the Changes in Bovine Meat Consumption Behavior in Korea](https://jekosae.or.kr/_common/do.php?a=full&b=41&bidx=385&aidx=4856)
+- [wikipedia](https://en.wikipedia.org/wiki/Fuel_economy_in_aircraft)
+- [aeroflot](https://www.aeroflot.ru/kr-ko/about/calculator_co2/method)
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE).
