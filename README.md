@@ -32,6 +32,19 @@ You can verify the deployment of the Calculator Contract by checking the contrac
 ## 📝 How is it calculated?
 The carbon emissions are calculated based on the emission factors and calculation methods referenced from [wikipedia](https://en.wikipedia.org/wiki/Fuel_economy_in_aircraft) and [aeroflot](https://www.aeroflot.ru/kr-ko/about/calculator_co2/method)
 
+The following formula is the essential formula of Carbon Footprint Calculator.
+``` plain
+# emission factor of individual passenger: 3.16
+# T(tot): Total payload transport fuel consumption(Average Fuel Burn x range)
+# P(pax/tot): Ratio of passenger weight to total payload weight
+# N(seat): Total number of seats
+# K(pax/seat): Ratio of seats occupied during flight
+
+emission factor of airplane(kgCO2/kg) x is business class(true: 2, false: 1) x Average Fuel Burn(kg/km) x range(km) x P(pax/tot) ÷ (N(seat) x K(pax/seat))
+```
+
+Please refer to the [Link](https://docs.google.com/spreadsheets/d/1Ux_1j0GeKGeHm8ODT-M-Hr23sCayQYw70shNw2le0Bs/edit#gid=1445027139) for more detailed info.
+
 ## 📚 Sources
 - [wikipedia](https://en.wikipedia.org/wiki/Fuel_economy_in_aircraft)
 - [aeroflot](https://www.aeroflot.ru/kr-ko/about/calculator_co2/method)
