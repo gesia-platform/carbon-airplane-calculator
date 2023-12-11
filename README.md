@@ -12,7 +12,7 @@ calculateCO2ByAirPlane(isBusiness, distance, p, seat, k, averageFuelBurn)
 
 true(isBusiness), 1000km(distance), 0.8(p), 100(seat), 0.6(k), 5.01(averageFuelBurn)
  - Scale by 10000(distance, p, k, averageFuelBurn)
- - calculateCO2ByAirPlane(true, 10000000, 80000, 6000, 50100)
+ - calculateCO2ByAirPlane(true, 10000000, 8000, 100, 6000, 50100)
  - 237474000000000000000 (in UI it should be divided by 18 decimals 237.474)
 ```
 
