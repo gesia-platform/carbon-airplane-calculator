@@ -6,24 +6,37 @@
 The Smart Contract-Based Footprint Calculator is a decentralized tool designed to estimate the carbon footprint associated with pete consumption. This smart contract operates on a blockchain platform and provides a straightforward way to calculate and retrieve carbon emission data from the blockchain.
 
 ## ✨ Features
-**Calculate Carbon Footprint (Public)**: Users can calculate the carbon footprint from the set AirPlane carbon emission factor. This public function returns an estimate of the carbon footprint associated with the weight of the AirPlane.
-```
-calculateCO2ByAirPlane(isBusiness, distance, p, seat, k, averageFuelBurn)
+### Calculate Carbon Footprint (Public)
+> Users can calculate the carbon footprint from the set AirPlane carbon emission factor. This public function returns an estimate of the carbon footprint associated with the weight of the AirPlane.
 
-true(isBusiness), 1000km(distance), 0.8(p), 100(seat), 0.6(k), 5.01(averageFuelBurn)
- - Scale by 10000(distance, p, k, averageFuelBurn)
- - calculateCO2ByAirPlane(true, 10000000, 8000, 100, 6000, 50100)
- - 237474000000000000000 (in UI it should be divided by 18 decimals 237.474)
+### calculateCO2ByAirPlane(isBusiness, distance, p, seat, k, averageFuelBurn) 
+```
+Overview:
+ - This function calculates the carbon footprint according to parameters of the airplane.
+ 
+Parameter:
+ - isBusiness(Boolean): "isBusiness" is the parameter whether the seat is business class or not
+ - distance(km): "distance" is distance during flight
+ - p(Number): "p" is ratio of passenger weight to total payload weight
+ - seat(Number): "seat" is total number of seats
+ - k(Number): "k" is ratio of seats occupied during flight
+ - averageFuelBurn(kg/km): "averageFuelBurn" is average fuel burn amount during flight
+ 
+Example:
+ - isBusiness: true, distance: 1000(km), p: 0.8, seat: 100, k: 0.6, averageFuelBurn: 5.01(kg/km)
+    1. Scale by 10000(distance, p, k, averageFuelBurn)
+    2. calculateCO2ByAirPlane(true, 10000000, 8000, 100, 6000, 50100)
+    3. 237474000000000000000 (in UI it should be divided by 18 decimals 237.474)
 ```
 
 ## 🚀 Smart Contract Deployment Information
-
 The Smart Contract-Based Carbon Footprint Calculator has been deployed on the Gesia Chain. Below are the deployment details:
 
 ### Calculator Contract
-
-- **Contract Address**: 0xd8bd5B6e36f0500357f33c71d3483446db903f2B
-- **Transaction Hash**: 0xc8037e12bd394c0ed5c4ac842e8b4ece113eeabaf061002ddcfdd83bc5c29c0e
+```
+Contract Address: 0xd8bd5B6e36f0500357f33c71d3483446db903f2B
+Transaction Hash: 0xc8037e12bd394c0ed5c4ac842e8b4ece113eeabaf061002ddcfdd83bc5c29c0e
+```
 
 You can verify the deployment of the Calculator Contract by checking the contract address and transaction hash on [Gesia Explorer](https://explorer.gesia.io). Here are the links for your convenience:
 
